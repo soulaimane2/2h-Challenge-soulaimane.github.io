@@ -86,6 +86,8 @@ header{
     font-family: 'Open Sans';
     font-weight: bold;
     transition: .4s;
+    text-transform: uppercase;
+    border-bottom: 4px solid #e04684;
 } 
 .flexer ul li a:hover{
     color: #E04684;
