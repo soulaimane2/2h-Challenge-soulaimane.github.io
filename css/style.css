@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/*************************************************************/
+@media screen and (max-width: 400px) {
+   .flexer, .flexer ul{
+       display: block !important;
+   } 
+  }
+/*************************************************************/
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.disclamer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: #fff;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 33px;
+    padding: 209px;
+    text-align: center;
+    font-family: 'Open Sans';
+}
+.closedesc{
+    position: fixed;
+    left: 61px;
+    top: 44px;
+    animation: rott 1s infinite;
+}
+@keyframes rott{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.disabled{
+    display: none;
+}
+.container{
+    width: 1100px;
+    margin: auto;
+}
+/*** Hearder ***/
+header{
+    background: #4f78f7;
+}
+
+.flexer{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0 90px 0;
+}
+.flexer ul{
+    list-style: none;
+    display: flex;
+}
+.flexer ul li{
+    padding: 0 10px 0 10px;
+    
+}
+.flexer ul li a{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans';
+    font-weight: bold;
+    transition: .4s;
+} 
+.flexer ul li a:hover{
+    color: #E04684;
+}
+.grid-section{
+    display: grid;
+}
+.hero-content{
+    width: 44%;
+    float: left;
+}
+.hero-content h1, .hero-content p{
+    color: white;
+    font-family: 'Open Sans';
+    
+}
+.txt-typed{
+    border-right: 1px solid #fff;
+}
+.hero-content h1{
+    font-size: 50px;
+    padding-bottom: 60px;
+}
+.hero-content p{
+    padding-bottom: 100px;
+    font-size: 20px;
+}
+
+
+
+.spacer{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.layer1{
+    background-image: url('../img/layered-waves-haikei.svg');
+
+}
+
+.stBtn{
+    margin-right: 54px;
+}
+.stBtn , .snBtn{
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    padding: 8px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+    transition: .5s;
+    font-family: 'Open Sans';
+    font-weight: bolder;
+}
+.stBtn::after, .snBtn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #E04684;
+    height: 100%;
+    width: 59px;
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: -1;
+    transition: .5s;
+}
+.snBtn::after{
+    right: 0;
+    left: unset !important;
+}
+.stBtn:hover:after, .snBtn:hover:after{
+width: 100%;
+border-radius: 10px;
+opacity: 1;
+}
+/*** header ***/
+/**** services ***/
+.services{
+    /* background-image: url("../img/circles.svg"); */
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}
+.services h1{
+    color: #E04684;
+    font-size: 50px;
+    font-family: 'Open Sans';
+    text-align: center;
+}
+.services-list{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat( auto-fit , minmax(300px,1fr) );
+    grid-auto-rows: 400px;
+}
+
+.card{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 50px;
+    font-family: Raleway;
+    text-transform: uppercase;
+    color: #e04684;
+    letter-spacing: 3px;
+    line-height: 43px;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    height: 201px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+/**/
+.spacer2{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.layer2{
+    background-image: url('../img/layered-waves-haikei1111111.svg');
+    
+}
+.expertise{
+    background-color: #0066ff;
+    color: #fff;
+    border-radius: 0 0 60% 0%;
+}
+.expertise .expSec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: start;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.expertise .grid-item1 h2, .expertise .grid-item1 p{
+    font-family: 'Raleway';
+    
+
+}
+.expertise .grid-item1 h2{
+    padding: 10px;
+    padding-bottom: 40px;
+    font-size: 50px;
+    color: #ec61f0;
+}
+.expertise .grid-item1 p{
+    text-align: justify;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    line-height: 34px;
+    padding: 0 66px 66px 0;
+}
+
+
+
+/******/
+.testimonials{
+    background-image: url("../img/testimo/testimonials.svg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 800px;
+    position: relative;
+}
+.testimonial{
+    font-family: 'Raleway' ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.testimonial h1{
+    font-family: "Open sans";
+    font-size: 50px;
+    color: rgb(236 97 240 / 79%);
+    padding: 30px;
+}
+
+.testimonial .testo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.testimonial .testo .photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('https://launchwebsitedesign.com/wp-content/uploads/2017/09/josh-d-avatar.jpg');
+    margin-bottom: 44px;
+    background-size: cover;
+}
+.testimonial .testo q{
+    line-height: 37px;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+    font-weight: 600;
+    width: 700px;
+}
+.testimonial .testo .author{
+    font-size: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #06f;
+    font-weight: bold;
+}
+
+/* .testimonials::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 500px;
+    width: 500px;
+    background-color: crimson;
+} */
+
+/*** Protfolio ***/
+
+.prot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+}
+.prot h1{
+    font-family: 'Raleway';
+    font-size: 50px;
+    color: rgb(236 97 240 / 79%);
+    margin-bottom: 50px;
+}
+.tabs{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.tabs span{
+    padding: 20px;
+    font-family: 'Open sans';
+    font-weight: 900;
+    
+}
+.tabs .active{
+    background-color: #E04684;
+    color: #fff;
+    border-radius: 20px;
+}
+.gallery{width: 100%;}
+.allPhoto{
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+  width: 100%;
+}
+.carder-tall{
+    grid-row: span 2 / auto;
+}
+.carder-wide{
+    grid-column: span 2 / auto;
+}
+@media screen and (max-width: 600px) {
+    .allPhoto{
+        display: block;
+    }
+    .carder{
+        height: 100%;
+    }
+}
+.carder{
+    background-size: cover !important;
+}
+
+/**blogs**/
+
+.blgs{
+    background-color: #0066ff;
+    position: relative;
+    overflow: hidden;
+    
+}
+.blgs h1{
+    text-align: center;
+    margin-bottom: 88px;
+    font-family: 'Raleway';
+    font-size: 50px;
+    color: rgb(236 97 240 / 79%);
+}
+.blogs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 3em;
+    padding-bottom: 20px;
+}
+.blog{
+    width: 33.33%;
+    background-color: #fff;
+    border-radius: 0 0 14px 14px;
+}
+.blog h2 , .blog p{
+    padding: 10px;
+    font-family: 'Open sans';
+    text-align: justify;
+}
+.blog p{
+    line-height: 30px;
+}
+.blog h2{
+    text-align: center;
+}
+.thumbnail{
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+.checkBlogsBtn{
+    float: right;
+    padding: 22px;
+    background: none;
+    border: none;
+    color: rgb(249 249 249);
+    font-size: 22px;
+    width: 321px;
+    background: #e04684;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-right: 400px;
+}
+
+/* contact **/
+.contact{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.contact h1{
+    padding: 60px;
+    font-family: Raleway;
+    font-size: 50px;
+    color: #E04684;
+}
+.contacting{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+    gap: 20px;
+}
+.contactForm{
+    width: 50%;
+}
+.contactForm form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.contactForm form > *{
+    width: 100%;
+    padding: 14px 0;
+    font-family: 'Raleway';
+    font-weight: 800;
+    max-width: 100%;
+    min-width: 100%;
+}
+.contactForm form button{
+    margin-top: 10px;
+    background: #4f78f7;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    margin-bottom: 20px;
+}
+.map{
+width: 50%;
+height: 500px;
+background-color: #E04684;
+}
+/*** Footer ***/
+
+footer{
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4f78f7;
+    color: #fff;
+    font-family: 'Open sans';
+    font-weight: 900;
+}
